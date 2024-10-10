@@ -14,14 +14,13 @@ export default function MapContainerContent() {
                 </Typography>
             </div>
             {markers.map((marker) => (
-                <div key={marker.id} style={{ marginBottom: 20 }}>
+                <div key={marker.id}>
                     <div className='mapText'>
                         <div className='mapTextDiv' style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                             <Typography
                                 variant={'h6'}
                                 fontWeight={'bolder'}
                                 fontSize={20}
-                                style={{ cursor: 'pointer' }}
                             >
                                 {marker.popUp.place}
                             </Typography>
@@ -31,11 +30,13 @@ export default function MapContainerContent() {
                             />
                         </div>
                         <div className='mapsubtitle'>
-                            <Typography variant={'subtitle2'} style={{ cursor: 'pointer' }}>
+                            <Typography variant={'subtitle2'}>
                                 {marker.popUp.subtitle}....
                             </Typography>
                         </div>
-                        <Divider variant="middle" />
+                        <div className='divider-div'>
+                            <Divider variant="middle" />
+                        </div>
                     </div>
                 </div>
             ))}

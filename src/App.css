@@ -12,11 +12,17 @@ header{
 }
 
 .video-card {
-    position: relative;
-    width: 100%;
-    min-width: 800px; 
-    margin: 0 auto; 
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-width: 800px; 
+  margin: 0 auto; 
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .video-card {
+    min-width: 100%; 
+  }
 }
 
 .video-card video {
@@ -29,7 +35,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .some-text-para{
@@ -107,7 +116,8 @@ header{
     overflow: hidden;
 }
 
-.box-container{
+.box-container{ 
+    margin-bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,14 +126,13 @@ header{
 
 .box-container-div{
     width: 100%;
-    height: 2400px;
-    overflow: hidden;
+    min-height: 2300px;
+
 }
 
 .box-container-1, .box-container-2, .box-container-3 {
     width: 100%;
-    height: 700px;
-    overflow: hidden;
+    min-height: 700px;
     margin-top: 40px;
 }
 
@@ -131,7 +140,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+
 }
 
 .leaflet-div{
@@ -168,32 +178,36 @@ header{
     display: none;
 }
 
-.mapContainer{
-    width: 35%;
-    background: #EFEEEE;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 850px; 
+.mapText{
+  max-height: 750px; 
 }
-
 
 .mapTextDiv{
-    padding-top: 15px;
-    padding-left: 20px;
-    padding-right: 5px;
-    display: flex;
-    justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 10px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
+.mapContainer{
+    width: 25%;
+    background: #EFEEEE;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 750px; 
+}
 .mapsubtitle{
-    margin-top: 0%;
+    margin-top: 0;
     padding-left: 20px;
-    width: 400px;
-    height: 70px;
+    padding-right: 20px;
+    max-width: 400px;
+    min-height: 65px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 3; 
     line-clamp: 3;
     -webkit-box-orient: vertical;
     line-height: 1.5;
@@ -201,5 +215,28 @@ header{
 
 .vertical-dashed-line{
   border-left: 6px dashed black;
-  height: 850px;
+  height: 750px;
+}
+
+.divider-div{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-div{
+  width: 75%;
+}
+
+@media (max-width: 750px){
+  .vertical-dashed-line{
+    border: none;
+  }
+  .map-div{
+    width: 100%;
+    height: 100%;
+  }
 }

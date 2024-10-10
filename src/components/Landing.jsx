@@ -32,7 +32,7 @@ export default function Landing() {
                     ]}
                     wrapper="span"
                     speed={10}
-                    style={{ fontSize: '2em', display: 'inline-block', fontFamily:"Merienda", fontWeight: 400, }}
+                    style={{ fontSize: '1.5em', display: 'inline-block', fontFamily:"Merienda", fontWeight: 700, textAlign:'center'}}
                     repeat={Infinity}
             />
             </div>
@@ -60,12 +60,15 @@ export default function Landing() {
                     <DivineCuluturePage></DivineCuluturePage>
                 </div>
            </div>
-           <div style={{display:'flex', width: '100%', height: '100%'}}>
+           <div style={{display:'flex'}}>
                 <div className='mapContainer'>
                     <MapContainerContent></MapContainerContent>
                 </div>
                 <div className='vertical-dashed-line'></div>
-                <Map></Map>
+                <div className='map-div'>
+                    <Map></Map>
+                </div>
+
            </div>
         </main>
     </div>

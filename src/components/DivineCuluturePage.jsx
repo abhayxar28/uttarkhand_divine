@@ -84,7 +84,7 @@ export default function DivineCuluturePage() {
                 </div>
             </div>
             <div className='some-text-para'>
-                <div>
+                <div >
                     <Typography variant={'subtitle1'} style={{fontFamily: "Kalam"}}>Uttarakhand is a premier destination for travelers seeking both adventure and tranquility. From the snow-capped peaks of the Himalayas to the lush green valleys, the state's diverse landscapes offer endless exploration. Popular spots like Nainital, Rishikesh, and Mussoorie provide a mix of natural beauty and recreational activities, including trekking, river rafting, and yoga retreats. Sacred sites such as Haridwar and the Char Dham pilgrimage routes attract those on spiritual journeys. With its blend of serene environments, vibrant culture, and outdoor adventures, Uttarakhand promises an unforgettable experience for every traveler.</Typography>
                 </div>
             </div>
